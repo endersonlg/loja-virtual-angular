@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'tsi-root',
+  selector: 'fai-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
