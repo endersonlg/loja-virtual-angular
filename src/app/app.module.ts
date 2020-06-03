@@ -16,6 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 import { ProductService } from './services/product.service';
+import { UserComponent } from './user/user.component';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,15 @@ import { ProductService } from './services/product.service';
     HeaderComponent,
     FooterComponent,
     ProductListComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(ROUTES, {})
   ],
-  providers: [ProductService],
+  providers: [ProductService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
