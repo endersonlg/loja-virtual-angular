@@ -1,0 +1,205 @@
+<!-- Navbar-->
+<header class="navbar navbar-sticky navbar-dark bg-dark">
+  <!-- Search-->
+  <form class="site-search" method="get">
+    <input type="text" name="site_search" placeholder="Digite para buscar...">
+
+    <div class="search-tools">
+      <span class="clear-search">Limpar</span>
+
+      <span class="close-search">
+        <i class="icon-cross"></i>
+      </span>
+    </div>
+  </form>
+
+  <div class="site-branding">
+    <div class="inner">
+
+      <!-- Site Logo-->
+      <a class="site-logo light-logo" href="http://localhost:4200/index.html">
+        <img src="./assets/images/png/logo-light.png">
+      </a>
+
+      <a class="site-logo logo-stuck" href="http://localhost:4200/index.html">
+        <img src="./assets/images/png/logo.png">
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Navigation-->
+  <nav class="site-menu">
+    <ul>
+      <li class="has-megamenu active">
+        <a href="http://localhost:4200/index.html">
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a [routerLink]="['/products']">
+          <span>Produtos</span>
+        </a>
+
+        <ul class="sub-menu">
+          <li>
+            <a [routerLink]="['/products']">Lista de produtos</a>
+          </li>
+          <li class="has-children">
+            <a href="http://localhost:4200/shop-grid-ls.html">
+              <span>Categoria</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="http://localhost:4200/shop-grid-ls.html">Sapatos e tênis</a>
+              </li>
+              <li>
+                <a href="http://localhost:4200/shop-grid-rs.html">Óculos</a>
+              </li>
+              <li>
+                <a href="http://localhost:4200/shop-grid-ns.html">Mochilas</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+
+        <a [routerLink]="['/about']">
+          <span>Sobre</span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- Toolbar-->
+  <div class="toolbar">
+    <div class="inner">
+      <div class="tools">
+
+        <div class="search">
+          <i class="icon-search"></i>
+        </div>
+
+        <div class="account">
+          <a href="http://localhost:4200/account-orders.html"></a>
+          <i class="icon-head"></i>
+          <ul class="toolbar-dropdown">
+
+            <li class="sub-menu-user">
+
+              <div class="user-ava">
+                <img src="./assets/images/jpg/user-01-sm.jpg" alt="Daniel Adams">
+              </div>
+
+              <div class="user-info">
+                <h6 class="user-name">Tiburssinho</h6>
+                <!-- <span class="text-xs text-muted">xxx pontos acumulados</span> -->
+              </div>
+            </li>
+
+            <li>
+              <a href="http://localhost:4200/account-profile.html">Perfil</a>
+            </li>
+
+            <li>
+              <a href="http://localhost:4200/account-orders.html">Pedidos</a>
+            </li>
+
+            <li>
+              <a href="http://localhost:4200/account-wishlist.html">Lista de desejos</a>
+            </li>
+
+            <li class="sub-menu-separator"></li>
+
+            <li>
+              <a href="http://localhost:4200/home-dark-header.html#">
+                <i class="icon-unlock"></i>
+                Sair
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cart">
+          <a href="http://localhost:4200/cart.html"></a>
+          <i class="icon-bag"></i>
+          <span class="count">3</span>
+          <span class="subtotal">R$289.68</span>
+          <div class="toolbar-dropdown">
+
+            <div class="dropdown-product-item">
+              <span class="dropdown-product-remove">
+                <i class="icon-cross"></i>
+              </span>
+
+              <a class="dropdown-product-thumb" href="http://localhost:4200/shop-single.html">
+                <img src="./assets/images/jpg/shoes-01-md.jpg" alt="Product">
+              </a>
+
+              <div class="dropdown-product-info">
+                <a class="dropdown-product-title" href="http://localhost:4200/shop-single.html">Tenis
+                  X</a>
+                <span class="dropdown-product-details">1 x R$43.90</span>
+              </div>
+            </div>
+
+            <div class="dropdown-product-item">
+              <span class="dropdown-product-remove">
+                <i class="icon-cross"></i>
+              </span>
+
+              <a class="dropdown-product-thumb" href="http://localhost:4200/shop-single.html">
+                <img src="./assets/images/jpg/hat-01-md.jpg" alt="Product">
+              </a>
+
+              <div class="dropdown-product-info">
+                <a class="dropdown-product-title" href="http://localhost:4200/shop-single.html">Boné</a>
+                <span class="dropdown-product-details">2 x R$24.89</span>
+              </div>
+            </div>
+
+            <div class="dropdown-product-item">
+              <span class="dropdown-product-remove">
+                <i class="icon-cross"></i>
+              </span>
+
+              <a class="dropdown-product-thumb" href="http://localhost:4200/shop-single.html">
+                <img src="./assets/images/jpg/bag-01-md.jpg" alt="Product">
+              </a>
+
+              <div class="dropdown-product-info">
+                <a class="dropdown-product-title" href="http://localhost:4200/shop-single.html">Bolsa</a>
+                <span class="dropdown-product-details">1 x R$200.00</span>
+              </div>
+            </div>
+
+            <div class="toolbar-dropdown-group">
+              <div class="column">
+                <span class="text-lg">Total:</span>
+              </div>
+
+              <div class="column text-right">
+                <span class="text-lg text-medium">R$289.68&nbsp;</span>
+              </div>
+            </div>
+
+            <div class="toolbar-dropdown-group">
+              <div class="column">
+                <a class="btn btn-sm btn-block btn-secondary" href="http://localhost:4200/cart.html">Ver
+                  carrinho</a>
+              </div>
+
+              <div class="column">
+                <a class="btn btn-sm btn-block btn-success"
+                  href="http://localhost:4200/checkout-address.html">Finalizar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
